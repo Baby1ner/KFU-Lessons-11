@@ -9,7 +9,6 @@ namespace KFU_Lessons_11_12
     internal abstract class Person
     {
         internal string name;
-        internal string surname;
         internal string tracked_event;
         internal abstract void CreateEvent();
     }

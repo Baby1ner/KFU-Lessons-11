@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace KFU_Lessons_11_12
 {
-    internal class Misha : Person
+    internal class Kamil : Person
     {
-        internal event EventHandler MovieCameOut;
+        internal event EventHandler ManyBitches;
 
-        internal Misha(string name, string surname, string tracked_event)
+        internal Kamil(string name, string tracked_event)
         {
             this.name = name;
-            this.surname = surname;
             this.tracked_event = tracked_event;
         }
 
         internal override void CreateEvent()
         {
-            if (MovieCameOut != null)
+            if (ManyBitches != null)
             {
-                MovieCameOut(this, new EventArgs());
+                ManyBitches(this, new EventArgs());
             }
         }
     }

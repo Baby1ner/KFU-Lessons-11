@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace KFU_Lessons_11_12
 {
-    internal class Vika : Person
+    internal class Ilya : Person
     {
-        internal event EventHandler NewLikeUnderAvatar;
+        internal event EventHandler Sigmafilm;
 
-        internal Vika(string name, string surname, string tracked_event)
+        internal Ilya(string name, string tracked_event)
         {
             this.name = name;
-            this.surname = surname;
             this.tracked_event = tracked_event;
         }
+
         internal override void CreateEvent()
         {
-            if (NewLikeUnderAvatar != null)
+            if (Sigmafilm != null)
             {
-                NewLikeUnderAvatar(this, new EventArgs());
+                Sigmafilm(this, new EventArgs());
             }
         }
     }

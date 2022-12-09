@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace KFU_Lessons_11_12
 {
-    internal class Sasha : Person
+    internal class Halil : Person
     {
-        internal event EventHandler NewSeriesReleased;
+        internal event EventHandler TatarSong;
 
-        internal Sasha(string name, string surname, string tracked_event)
+        internal Halil(string name, string tracked_event)
         {
             this.name = name;
-            this.surname = surname;
             this.tracked_event = tracked_event;
         }
 
         internal override void CreateEvent()
         {
-            if (NewSeriesReleased != null)
+            if (TatarSong != null)
             {
-                NewSeriesReleased(this, new EventArgs());
+                TatarSong(this, new EventArgs());
             }
         }
     }
