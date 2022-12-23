@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KFU-Lessons-11", "KFU-Lesso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T00Much(11)", "T00Much(11)\T00Much(11).csproj", "{74FBE21C-4BD5-411C-A7DF-75223AF60810}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T00Much(12)", "T00Much(12)\T00Much(12).csproj", "{501E36E7-8B30-4148-958C-BEF8487BA8AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{74FBE21C-4BD5-411C-A7DF-75223AF60810}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74FBE21C-4BD5-411C-A7DF-75223AF60810}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74FBE21C-4BD5-411C-A7DF-75223AF60810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501E36E7-8B30-4148-958C-BEF8487BA8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501E36E7-8B30-4148-958C-BEF8487BA8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501E36E7-8B30-4148-958C-BEF8487BA8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501E36E7-8B30-4148-958C-BEF8487BA8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

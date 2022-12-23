@@ -1,12 +1,78 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace T00Much_11_
+namespace T00Much_11_Bank
 {
+    internal class BankTransaction
+    {
+        readonly DateTime data = DateTime.Now;
+        readonly decimal summa;
+        public BankTransaction(decimal summa)
+        {
+            this.summa = summa;
+        }
+        public bool PrintInfo()
+        {
+            Console.WriteLine($" Дата:{data} Сумма:{summa}");
+            return true;
+        }
+
+        public string Printt()
+        {
+            return $" Дата:{data} Сумма:{summa}";
+        }
+
+    }
+
+
+    public class BankFactory
+    {
+        static public Hashtable ht = new Hashtable(1000);
+
+
+        public void CreateAccount(int Balans, Bank.tip Type)
+        {
+            Bank product = new Bank(Balans, Type);
+            product.PrintID();
+            ht.Add(product.Id, product);
+        }
+        public void CreateAccount(int Balans)
+        {
+            Bank product = new Bank(Balans);
+            product.PrintID();
+            ht.Add(product.Id, product);
+        }
+        public void CreateAccount(Bank.tip Type)
+        {
+            Bank product = new Bank(Type);
+            product.PrintID();
+            ht.Add(product.Id, product);
+        }
+
+        public void ClouseAccount(int Id)
+        {
+            ht.Remove(Id);
+        }
+
+        public void PrintTable()
+        {
+            Console.WriteLine("В таблице хранятся следующие банковские счета:");
+            for (int i = 0; i < 1000; i++)
+            {
+                if (ht.ContainsKey(i))
+                {
+                    Bank bank = ht[i] as Bank;
+                    Console.WriteLine($"Номер = {bank.Id}, Тип: {bank.Type}, Баланс: {bank.Balans}");
+                }
+            }
+        }
+    }
+
+
     public class Bank
     {
         public enum tip
@@ -22,7 +88,7 @@ namespace T00Much_11_
 
         internal Bank(int Balans, tip Type)
         {
-            
+
             Id = Idk;
             Idk++;
             this.Balans = Balans;
@@ -32,7 +98,7 @@ namespace T00Much_11_
 
         internal Bank(int Balans)
         {
-            
+
             Id = Idk;
             Idk++;
             this.Balans = Balans;
@@ -40,7 +106,7 @@ namespace T00Much_11_
 
         internal Bank(tip Type)
         {
-            
+
             Id = Idk;
             Idk++;
             this.Type = Type;
@@ -101,5 +167,11 @@ namespace T00Much_11_
 
         }
     }
+
+
+
+
+
+
 
 }

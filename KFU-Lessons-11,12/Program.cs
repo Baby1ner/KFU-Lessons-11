@@ -14,9 +14,9 @@ namespace KFU_Lessons_11
     {
         static void Main(string[] args)
         {
-            /*
+            
             Console.WriteLine("Задание 1");
-            List<string> fileLines = File.ReadAllLines(@".\..\..\students.txt").ToList();
+            List<string> fileLines = File.ReadAllLines(@"C:\Users\User\source\repos\KFU-Lessons-11,12\KFU-Lessons-11,12\Task1\students.txt").ToList();
             List<Student> students = new List<Student>();
             foreach (var fileLine in fileLines)
             {
@@ -58,7 +58,7 @@ namespace KFU_Lessons_11
             Event event4 = new Event("Пойти на математику", new DateTime(2022, 12, 17), 3, 3);
             event4.Otbor(groups);
             event4.PrintToFile();
-            */
+            
 
             Console.WriteLine("Задачи 2");
             List<string> events = new List<string> { "фильм где главный герой тупа я", "по улице идет толпа девочек", "татарские треки" };
@@ -110,6 +110,7 @@ namespace KFU_Lessons_11
                 Console.WriteLine("Данное событие никто не отслеживает");
             }
 
+            Console.ReadKey();
 
         }        
 

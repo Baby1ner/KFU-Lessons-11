@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{74FBE21C-4BD5-411C-A7DF-75223AF60810}</ProjectGuid>
+    <ProjectGuid>{ECA929C9-69EA-4AB3-BDB6-7A785DBE9E14}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>T00Much_11_</RootNamespace>
-    <AssemblyName>T00Much%2811%29</AssemblyName>
+    <RootNamespace>T00Much11_helper_</RootNamespace>
+    <AssemblyName>T00Much11%28helper%29</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HOuses\Creator.cs" />
-    <Compile Include="HOuses\Doma.cs" />
-    <Compile Include="Bank.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

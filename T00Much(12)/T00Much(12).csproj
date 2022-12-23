@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{74FBE21C-4BD5-411C-A7DF-75223AF60810}</ProjectGuid>
+    <ProjectGuid>{501E36E7-8B30-4148-958C-BEF8487BA8AA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>T00Much_11_</RootNamespace>
-    <AssemblyName>T00Much%2811%29</AssemblyName>
+    <RootNamespace>T00Much_12_</RootNamespace>
+    <AssemblyName>T00Much%2812%29</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HOuses\Creator.cs" />
-    <Compile Include="HOuses\Doma.cs" />
-    <Compile Include="Bank.cs" />
+    <Compile Include="BankAcc.cs" />
+    <Compile Include="C.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Q.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

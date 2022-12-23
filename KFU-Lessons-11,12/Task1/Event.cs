@@ -88,7 +88,7 @@ namespace KFU_Lessons_11_12
 
         public void PrintToFile()
         {
-            StreamWriter sr = new StreamWriter(@".\..\..\Events.txt");
+            StreamWriter sr = new StreamWriter(@"C:\Users\User\source\repos\KFU-Lessons-11,12\KFU-Lessons-11,12\Task1\Events.txt");
             sr.WriteLine($"{Name} разыгрывается {Date} числа\nВ которой буду участвовать студенты:");
             for (int i = 0; i < students.Count; i++)
                 sr.WriteLine($"Участвует {students[i].Name} из {students[i].Id} группы");

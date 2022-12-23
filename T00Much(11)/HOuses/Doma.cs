@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace T00Much_11_
+namespace T00Much_11_Home
 {
     internal class Doma
     {
 
-        private int Id;
+        public int Id;
         private double height;
         private int floor;
         private int flat;
@@ -17,7 +17,11 @@ namespace T00Much_11_
         private static int Idk = 1;
 
 
-
+        public Doma()
+        {
+            Id = Idk;
+            Idk++;
+        }
 
         public void dom()
         {

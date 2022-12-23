@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace T00Much_11_
+namespace T00Much11_helper_
 {
-    internal class Creator
-    {
-    }
+
 }
